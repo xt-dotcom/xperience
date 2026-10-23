@@ -328,50 +328,57 @@
       .footer-main { display: block; }
       .footer-links { margin-top: 24px; gap: 13px 20px; }
     }
-    /* Lisibilité renforcée sur tablettes et mobiles — version 2.
-       Les titres et la mise en page sur ordinateur restent inchangés. */
+    /* VERSION 4 — Lisibilité mobile : aucun petit texte de lecture sous 16 px.
+       Titres et affichage ordinateur inchangés. */
     @media (max-width: 880px) {
       body { font-size: 18px; line-height: 1.8; }
       .lead, .bodycopy, .hero-copy .lead,
       .faq-aside p:not(.eyebrow), .contact-intro { font-size: 18px; line-height: 1.8; }
       .promise p, .problem p, .check-list li, .step p,
       .sector-content p, .model-item p, .faq-list details p {
-        font-size: 17px;
-        line-height: 1.8;
+        font-size: 18px; line-height: 1.8;
       }
-      .section-endline, .sector-foot, .faq-list summary { font-size: 17px; line-height: 1.7; }
+      .section-endline, .sector-foot, .faq-list summary { font-size: 18px; line-height: 1.7; }
       .hero-footnote, .contact-trust, .form-panel > p,
       .model-note, .form-note, .footer-tag, .footer-links,
-      .footer-bottom { font-size: 15px; line-height: 1.7; }
+      .footer-bottom { font-size: 17px; line-height: 1.7; }
       .eyebrow, .promise .count, .model-item span,
-      .sector-content .sector-no, .manifesto .small { font-size: 13px; }
-      .text-link, .btn, .nav .btn { font-size: 16px; }
-      .nav > a:not(.btn) { font-size: 16px; }
-      .chip { font-size: 14px; line-height: 1.55; }
-      .field label { font-size: 15px; }
-      .field input, .field textarea { font-size: 16px; }
-      .room-content .sub, .dataroom-note { font-size: 13px; }
-      .room-line b { font-size: 13px; }
-      .room-line small, .room-ok { font-size: 12px; }
-      .room-brand { font-size: 13px; }
-      .room-tag { font-size: 12px; }
-      .room-eyebrow, .room-bottom { font-size: 12px; }
-      .form-status { font-size: 15px; }
+      .sector-content .sector-no, .manifesto .small { font-size: 16px; letter-spacing: .10em; line-height: 1.5; }
+      .text-link, .btn, .nav .btn { font-size: 17px; }
+      .nav > a:not(.btn) { font-size: 18px; }
+      .chip { font-size: 16px; line-height: 1.55; }
+      .field label { font-size: 17px; }
+      .field input, .field textarea { font-size: 17px; }
+      .step-n { font-size: 17px; }
+      .form-status { font-size: 17px; }
+      .media-badge strong { font-size: 16px; letter-spacing: .04em; }
+      .media-badge span { font-size: 16px; line-height: 1.5; }
+      /* Maquette illustrative de data room : agrandissement sans débordement. */
+      .room-top { flex-wrap: wrap; gap: 8px 14px; }
+      .room-brand, .room-tag, .room-eyebrow { font-size: 16px; letter-spacing: .02em; }
+      .room-content .sub, .dataroom-note { font-size: 16px; line-height: 1.6; }
+      .room-line b, .room-line small { font-size: 16px; line-height: 1.55; }
+      .room-ok { font-size: 16px; }
+      .room-bottom { font-size: 16px; gap: 8px; flex-wrap: wrap; line-height: 1.55; }
+      /* Plus de contraste pour les légendes et compléments. */
+      .room-line small, .room-content .sub, .dataroom-note, .room-bottom { color: #54655f; }
     }
     @media (max-width: 520px) {
-      .hero-copy .lead,
-      .problem p, .promise p, .check-list li, .step p,
-      .sector-content p, .model-item p, .faq-list details p,
-      .contact-intro { font-size: 18px; line-height: 1.82; }
-      .text-link, .section-endline, .sector-foot, .faq-list summary { font-size: 17px; }
+      .hero-copy .lead, .problem p, .promise p, .check-list li,
+      .step p, .sector-content p, .model-item p,
+      .faq-list details p, .contact-intro { font-size: 18px; line-height: 1.82; }
+      .text-link, .section-endline, .sector-foot, .faq-list summary { font-size: 18px; }
       .hero-footnote, .contact-trust, .form-panel > p,
       .model-note, .form-note, .footer-tag, .footer-links,
-      .footer-bottom { font-size: 15px; }
-      .media-badge strong { font-size: 12px; }
-      .media-badge span { font-size: 14px; }
-      .room-line { grid-template-columns: 26px minmax(0,1fr); }
-      .room-ok { grid-column: 2; justify-self: start; margin-top: -2px; }
+      .footer-bottom { font-size: 17px; }
+      .media-badge { max-width: min(200px, 65%); }
+      .media-badge strong { font-size: 16px; }
+      .media-badge span { font-size: 16px; }
+      .room-line { grid-template-columns: 26px minmax(0,1fr); gap: 9px 12px; }
+      .room-ok { grid-column: 2; justify-self: start; margin-top: 0; }
       .room-content { padding: 22px 18px 12px; }
+      .room-top { padding: 16px 18px; }
+      .room-bottom { padding: 16px 18px; }
       .footer-links { row-gap: 17px; }
     }
     @media (prefers-reduced-motion: reduce) {
