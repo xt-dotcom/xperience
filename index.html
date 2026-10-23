@@ -331,36 +331,44 @@
     /* Lisibilité renforcée sur tablettes et mobiles — version 2.
        Les titres et la mise en page sur ordinateur restent inchangés. */
     @media (max-width: 880px) {
-      body { font-size: 17px; line-height: 1.75; }
+      body { font-size: 18px; line-height: 1.8; }
       .lead, .bodycopy, .hero-copy .lead,
-      .faq-aside p:not(.eyebrow), .contact-intro { font-size: 17px; line-height: 1.75; }
+      .faq-aside p:not(.eyebrow), .contact-intro { font-size: 18px; line-height: 1.8; }
       .promise p, .problem p, .check-list li, .step p,
       .sector-content p, .model-item p, .faq-list details p {
-        font-size: 16px;
-        line-height: 1.75;
+        font-size: 17px;
+        line-height: 1.8;
       }
-      .section-endline, .sector-foot, .faq-list summary { font-size: 16px; }
+      .section-endline, .sector-foot, .faq-list summary { font-size: 17px; line-height: 1.7; }
       .hero-footnote, .contact-trust, .form-panel > p,
       .model-note, .form-note, .footer-tag, .footer-links,
-      .footer-bottom { font-size: 14px; line-height: 1.65; }
+      .footer-bottom { font-size: 15px; line-height: 1.7; }
       .eyebrow, .promise .count, .model-item span,
-      .sector-content .sector-no, .manifesto .small { font-size: 12px; }
-      .text-link, .btn, .nav .btn { font-size: 15px; }
+      .sector-content .sector-no, .manifesto .small { font-size: 13px; }
+      .text-link, .btn, .nav .btn { font-size: 16px; }
       .nav > a:not(.btn) { font-size: 16px; }
-      .chip { font-size: 13px; line-height: 1.5; }
-      .field label { font-size: 14px; }
+      .chip { font-size: 14px; line-height: 1.55; }
+      .field label { font-size: 15px; }
       .field input, .field textarea { font-size: 16px; }
-      .room-content .sub, .dataroom-note { font-size: 12px; }
-      .room-line b { font-size: 12px; }
-      .room-line small, .room-ok { font-size: 11px; }
-      .room-brand { font-size: 12px; }
-      .room-tag { font-size: 11px; }
-      .room-eyebrow, .room-bottom { font-size: 11px; }
-      .form-status { font-size: 14px; }
+      .room-content .sub, .dataroom-note { font-size: 13px; }
+      .room-line b { font-size: 13px; }
+      .room-line small, .room-ok { font-size: 12px; }
+      .room-brand { font-size: 13px; }
+      .room-tag { font-size: 12px; }
+      .room-eyebrow, .room-bottom { font-size: 12px; }
+      .form-status { font-size: 15px; }
     }
     @media (max-width: 520px) {
-      .media-badge strong { font-size: 11px; }
-      .media-badge span { font-size: 13px; }
+      .hero-copy .lead,
+      .problem p, .promise p, .check-list li, .step p,
+      .sector-content p, .model-item p, .faq-list details p,
+      .contact-intro { font-size: 18px; line-height: 1.82; }
+      .text-link, .section-endline, .sector-foot, .faq-list summary { font-size: 17px; }
+      .hero-footnote, .contact-trust, .form-panel > p,
+      .model-note, .form-note, .footer-tag, .footer-links,
+      .footer-bottom { font-size: 15px; }
+      .media-badge strong { font-size: 12px; }
+      .media-badge span { font-size: 14px; }
       .room-line { grid-template-columns: 26px minmax(0,1fr); }
       .room-ok { grid-column: 2; justify-self: start; margin-top: -2px; }
       .room-content { padding: 22px 18px 12px; }
